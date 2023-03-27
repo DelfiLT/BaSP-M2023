@@ -6,15 +6,17 @@
 
 ## Week 01
 
-In the first week we created the landing page designed in figma in html wich contains the sections:
+In the fisrt week we created all the screenflow of the page in [FIGMA](https://www.figma.com/file/ChRGiIvcPtSCZutjKNaC4W/BaSP---Screenflow---Yankee?node-id=41%3A4&t=KFFC7mJZCMpJQHUH-1)
+
+## Week 02
+
+In the second week we created the landing page designed in figma in html wich contains the sections:
 - Welcome
 - Features
 - About Mega Rocket
 - Get in touch
 - Activities
 - Memberships
-
-You can also create an account and log in as a member.
 
 ## Authors
 - Tomasino Delfina
