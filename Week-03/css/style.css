@@ -118,3 +118,43 @@ footer {
     font-size: 20px;
     line-height: 23px;
 }
+
+.welcome-section {
+    display: inline-block;
+    width: 1050px;
+    height: 315px;
+    margin-top: 65px;
+    margin-left: 74px;
+}
+
+.welcome-text {
+    display: inline-block;
+    text-align: center;
+    width: 485px;
+    margin-top: 69px;
+    margin-right: 61px;
+}
+
+.welcome-text h1 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #373867;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.welcome-text h2 {
+    text-transform: uppercase;
+    color: #49A37B;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.welcome-text p {
+    color: #373867;
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
