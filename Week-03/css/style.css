@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #373867;
+    position: sticky;
+    top: 0;
+    height: 98px;
+    width: 1512px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+aside {
+    background-color: #AACE9B;
+    display: block;
+    position: fixed;
+    width: 313px;
+    height: 915px;
+    top: 98px;
+    z-index: 1;
+}
+
+nav {
+    display: inline-block;
+    margin: 19px 25px 19px 25px;
+}
+
+main {
+    position: relative;
+    width: 1200px;
+    left: 313px;
+}
+
+footer {
+    background-color: #AACE9B;
+    display: block;
+    position: relative;
+    height: 72px;
+    width: 1200px;
+    left: 313px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 29px;
+    width: 194px;
+    height: 41px;
+}
+
+.nav-button {
+    position: relative;
+    list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    height: 38px;
+    width: 263px;
+    margin-bottom: 19px;
+}
+
+.nav-button:last-child {
+    margin-bottom: 0;
+}
+
+.nav-button a {
+    display: block;
+    text-decoration: none;
+    color: #373867;
+    font-style: normal;
+    height: 38px;
+    font-size: 20px;
+    font-weight: 876;
+    line-height: 23px;
+    padding-top: 7.3px;
+    padding-left: 107px;
+}
+
+.nav-button img {
+    position: absolute;
+    left: 79px;
+    top: 9.86px;
+}
+
+.contact-info {
+    position: relative;
+    margin: 19px;
+    top: 477px;
+}
+
+.contact-item {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    width: 217px;
+    margin-top: 19px;
+    left: 47px;
+    color: #373867;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.contact-item img {
+    position: absolute;
+    left: -32.72px;
+}
+
+.contact-info h2 {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    left: 46px;
+    font-size: 20px;
+    line-height: 23px;
+}
