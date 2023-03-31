@@ -4,95 +4,102 @@
         <title>
             MegaRocket
         </title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-                <a href="index.html">
+                <a class="logo" href="index.html">
                     <img src = "assets/imgs/logo-mega-rocket.png" alt="Mega rocket logo">
                 </a>
         </header>
         <aside>
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html">
-                            <img src="assets/imgs/home-icon.png" alt="home icon">
+                    <li class="nav-button">
+                        <img src="assets/imgs/home-icon.png" alt="home icon">
+                        <a  href="index.html">
                             Home
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-button">
+                        <img src="assets/imgs/sign-up-icon.png" alt="sign up icon">
                         <a href="">
-                            <img src="assets/imgs/sign-up-icon.png" alt="sign up icon">
                             Sign Up
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-button">
+                        <img src="assets/imgs/sign-in-icon.png" alt="sign in">
                         <a href="">
-                            <img src="assets/imgs/sign-in-icon.png" alt="sign in">
                             Sign In
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div>
-                <h3>
+            <div class="contact-info">
+                <h2>
                     Contact Information
-                </h3>
+                </h2>
                 <ul>
-                    <li>
+                    <li class="contact-item">
                         <img src="assets/imgs/email-icon.png" alt="email icon">
-                        information@gmail.com
+                        information@untitled.tld
                     </li>
-                    <li>
+                    <li class="contact-item">
                         <img src="assets/imgs/phone-icon.png" alt="phone icon">
-                        (000)000-0000
+                        (000) 000-0000
                     </li>
-                    <li>
-                        <img src="assets/imgs/home-icon.png" alt="home icon">
-                        Calle 1234 Rosario Santa Fe, Argentina
+                    <li class="contact-item">
+                        <img src="assets/imgs/home-icon2.png" alt="home icon">
+                        1234 Somewhere Road #8254 Nashville, TN
                     </li>
                 </ul>
             </div>
         </aside>
         <main>
-            <section>
-                <h1>
-                    Mega Roquet web
-                </h1>
-                <h2>
-                    Welcome
-                </h2>
-                <p>
-                    Mega Rocket web is a monthly management system for members and trainers so that they can dynamically sign up for their
-                    activities in the gym.
-                </p>
+            <section class="welcome-section">
+                <article class="welcome-text">
+                    <h1>
+                        Mega Roquet web
+                    </h1>
+                    <h2>
+                        Welcome
+                    </h2>
+                    <p>
+                        Mega Rocket web is a monthly management system for members and trainers so that they can dynamically sign up for their 
+                        activities in the gym.
+                    </p>
+                </article>
                 <img src="assets/imgs/welcome.png" alt="modern gym with multiple machines">
             </section>
-            <section>
+            <section class="features-section">
                 <h2>
                     Features
                 </h2>
-                <article>
+                <article class="feature-article">
                     <img src="assets/imgs/shift-reservations-logo.png" alt="shift icon">
                     <h3>
                         Shift Reservations
                     </h3>
                     <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.Proin aliquam facilisis ante interdum.
+                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.Proin aliquam facilisis ante interdum. 
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 </article>
-                <article>
+                <article class="feature-article">
                     <img src="assets/imgs/schedule-logo.png" alt="shcedule icon">
                     <h3>
                         Scheduling & Opening Hours
                     </h3>
                     <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum.
+                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 </article>
-                <article>
+                <article class="feature-article">
                     <img src="assets/imgs/membership-management-logo.png" alt="management icon">
                     <h3>
                         Membership Management
@@ -102,7 +109,7 @@
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 </article>
-                <article>
+                <article class="feature-article">
                     <img src="assets/imgs/contact-logo.png" alt="contact icon">
                     <h3>
                         Contact Form & Suggestions
@@ -142,28 +149,28 @@
                 </h2>
                 <form>
                     <div>
-                        <label>
+                        <label for="form-name">
                             First Name
                         </label>
-                        <input placeholder="Enter name" type="text">
+                        <input id="form-name" placeholder="Enter name" type="text">
                     </div>
                     <div>
-                        <label>
+                        <label for="form-last-name">
                             Last Name
                         </label>
-                        <input placeholder="Enter last name" type="text">
+                        <input id="form-last-name" placeholder="Enter last name" type="text">
                     </div>
                     <div>
-                        <label>
+                        <label for="form-email">
                             Email address
                         </label>
-                        <input placeholder="Enter adress" type="text">
+                        <input id="form-email" placeholder="Enter adress" type="text">
                     </div>
                     <div>
-                        <label>
+                        <label for="form-reason">
                             Contact Reason
                         </label>
-                        <select>
+                        <select id="form-reason">
                             <option selected dissabled hidden value="Choose contact reason">
                                 Choose contact reason
                             </option>
