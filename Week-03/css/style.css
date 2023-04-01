@@ -256,4 +256,80 @@ footer {
 .form-section {
     margin-top: 65px;
     margin-left: 150px;
+    width: 900px;
+    height: 387px;
+}
+
+.form-section h2 {
+    margin-left: 346px;
+    margin-bottom: 37px;
+}
+
+.form-inputs {
+    float: left;
+    margin-right: 74px;
+}
+
+.label{
+    display: block;
+    color: #373867;
+    margin-bottom: 7px;
+    margin-top: 23px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-input input {
+    width: 260px;
+    height: 37px;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.form-input input::placeholder, .form-textarea textarea::placeholder {
+    color: #373867;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
+.form-select, .form-textarea {
+    float: right;
+}
+
+.form-select select {
+    height: 36px;
+    width: 566px;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: #373867;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-textarea textarea {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    width: 566px;
+    height: 191.6px;
+}
+
+button {
+    margin-top: 22px;
+    padding: 14px 36px;
+    width: 123px;
+    height: 47px;
+    background: #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
