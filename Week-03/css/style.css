@@ -40,9 +40,15 @@ footer {
     background-color: #AACE9B;
     display: block;
     position: relative;
+    text-align: center;
+    padding-top: 8px;
     height: 72px;
     width: 1200px;
     left: 313px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .logo {
@@ -313,6 +319,7 @@ footer {
 }
 
 .form-textarea textarea {
+    resize: none;
     padding: 10px 12px 10px 12px;
     border: 1px solid #373867;
     border-radius: 4px;
@@ -321,6 +328,7 @@ footer {
 }
 
 button {
+    border-style: none;
     margin-top: 22px;
     padding: 14px 36px;
     width: 123px;
@@ -332,4 +340,76 @@ button {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
+
+.activities-section {
+    margin-top: 65px;
+    margin-left: 133px;
+}
+
+.activities-section h2 {
+    margin-left: 348px;
+    margin-bottom: 62px;
+}
+
+.activities-article ul {
+    display: inline-block;
+    margin-top: 22px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.activities-article ul li {
+    margin-bottom: 14px;
+}
+
+.activities-article img {
+    float: right;
+    margin-right: 132px;
+}
+
+.membership-section {
+    margin-top: 65px;
+    margin-left: 109px;
+    margin-bottom: 65px;
+}
+
+.membership-section h2 {
+    margin-left: 379px;
+    margin-bottom: 62px;
+}
+
+table {
+    width: 981.55px;
+    height: 293px;
+    border-spacing: 0;
+    color: #373867;
+    font-weight: 600;
+}
+
+tr {
+    height: 58.6px;
+}
+
+th {
+    width: 196.31px;
+}
+
+.first-column {
+    width: 392.62px;
+}
+
+td {
+    text-align: center;
+}
+
+.colored-tr {
+    background-color: #D9D9D9;;
+}
+
+footer a {
+    margin-right: 16px;
+    text-decoration: none;
 }
