@@ -1,16 +1,14 @@
-* {
+body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 header {
     background-color: #373867;
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 98px;
-    width: 1512px;
+    width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
@@ -20,7 +18,7 @@ aside {
     display: block;
     position: fixed;
     width: 313px;
-    height: 915px;
+    height: 100%;
     top: 98px;
     z-index: 1;
 }
@@ -33,6 +31,7 @@ nav {
 main {
     position: relative;
     width: 1200px;
+    top: 98px;
     left: 313px;
 }
 
@@ -41,6 +40,7 @@ footer {
     display: block;
     position: relative;
     text-align: center;
+    top: 98px;
     padding-top: 8px;
     height: 72px;
     width: 1200px;
@@ -49,6 +49,16 @@ footer {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+}
+
+table, tbody, th, td, tr {
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer a {
+    margin-right: 16px;
+    text-decoration: none;
 }
 
 .logo {
@@ -94,33 +104,31 @@ footer {
 
 .contact-info {
     position: relative;
-    margin: 19px;
-    top: 477px;
+    margin-left: 30px;
+    top: 462.67px;
 }
 
 .contact-item {
-    display: inline-block;
-    position: relative;
     list-style: none;
-    width: 217px;
     margin-top: 19px;
-    left: 47px;
     color: #373867;
     font-size: 20px;
     line-height: 23px;
 }
 
 .contact-item img {
-    position: absolute;
-    left: -32.72px;
+    float: left;
+    margin-right: 16.36px;
 }
 
 .contact-info h2 {
     display: inline-block;
     position: relative;
+    margin-bottom: 21px;
     color: #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
-    left: 46px;
+    left: 31.64px;
+    font-weight: bold;
     font-size: 20px;
     line-height: 23px;
 }
@@ -144,6 +152,7 @@ footer {
     text-transform: uppercase;
     margin: 0;
     color: #373867;
+    font-weight: bold;
     font-size: 40px;
     line-height: 47px;
 }
@@ -174,7 +183,6 @@ footer {
 }
 
 .features-section {
-    display: inline-block;
     margin-top: 65px;
     margin-left: 112px;
     height: 469px;
@@ -188,8 +196,12 @@ footer {
 
 .feature-article {
     display: inline-block;
-    width: 477px;
+    width: 395px;
     margin-top: 24px;
+}
+
+.first-column-feature {
+    margin-right: 164px;
 }
 
 .feature-article img,h3,p {
@@ -272,7 +284,7 @@ footer {
 }
 
 .form-inputs {
-    float: left;
+    display: inline-block;
     margin-right: 74px;
 }
 
@@ -287,8 +299,7 @@ footer {
 }
 
 .form-input input {
-    width: 260px;
-    height: 37px;
+    width: 234px;
     padding: 10px 12px 10px 12px;
     border: 1px solid #373867;
     border-radius: 4px;
@@ -302,8 +313,24 @@ footer {
     opacity: 0.5;
 }
 
-.form-select, .form-textarea {
+.form-button {
+    border-style: none;
+    margin-top: 20px;
+    padding: 14px 36px;
+    width: 123px;
+    height: 47px;
+    background: #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.form-select-textarea {
     float: right;
+    width: 566px;
 }
 
 .form-select select {
@@ -319,32 +346,18 @@ footer {
 }
 
 .form-textarea textarea {
+    width: 540px;
+    height: 163px;
     resize: none;
     padding: 10px 12px 10px 12px;
     border: 1px solid #373867;
     border-radius: 4px;
-    width: 566px;
-    height: 191.6px;
-}
-
-button {
-    border-style: none;
-    margin-top: 22px;
-    padding: 14px 36px;
-    width: 123px;
-    height: 47px;
-    background: #AACE9B;
-    border-radius: 5px;
-    color: #373867;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
 }
 
 .activities-section {
     margin-top: 65px;
     margin-left: 133px;
+    height: 346px;
 }
 
 .activities-section h2 {
@@ -353,6 +366,7 @@ button {
 }
 
 .activities-article ul {
+    list-style: disc;
     display: inline-block;
     margin-top: 22px;
     color: #373867;
@@ -381,35 +395,23 @@ button {
     margin-bottom: 62px;
 }
 
-table {
-    width: 981.55px;
-    height: 293px;
-    border-spacing: 0;
+.membership-table {
     color: #373867;
     font-weight: 600;
-}
-
-tr {
-    height: 58.6px;
-}
-
-th {
-    width: 196.31px;
 }
 
 .first-column {
     width: 392.62px;
 }
 
-td {
-    text-align: center;
+.white-tr, .colored-tr {
+    height: 58.6px;
 }
 
 .colored-tr {
     background-color: #D9D9D9;;
 }
 
-footer a {
-    margin-right: 16px;
-    text-decoration: none;
+.membership-th {
+    width: 196.31px;
 }

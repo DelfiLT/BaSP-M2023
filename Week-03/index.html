@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             MegaRocket
         </title>
@@ -21,19 +24,19 @@
                 <ul>
                     <li class="nav-button">
                         <img src="assets/imgs/home-icon.png" alt="home icon">
-                        <a  href="index.html">
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
                     <li class="nav-button">
                         <img src="assets/imgs/sign-up-icon.png" alt="sign up icon">
-                        <a href="">
+                        <a href="#">
                             Sign Up
                         </a>
                     </li>
                     <li class="nav-button">
                         <img src="assets/imgs/sign-in-icon.png" alt="sign in">
-                        <a href="">
+                        <a href="#">
                             Sign In
                         </a>
                     </li>
@@ -79,7 +82,7 @@
                 <h2 class="section-title">
                     Features
                 </h2>
-                <article class="feature-article">
+                <article class="feature-article first-column-feature">
                     <img src="assets/imgs/shift-reservations-logo.png" alt="shift icon">
                     <h3>
                         Shift Reservations
@@ -99,7 +102,7 @@
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 </article>
-                <article class="feature-article">
+                <article class="feature-article first-column-feature">
                     <img src="assets/imgs/membership-management-logo.png" alt="management icon">
                     <h3>
                         Membership Management
@@ -149,53 +152,54 @@
                 <form>
                     <div class="form-inputs">
                         <div class="form-input">
-                            <label class="label" for="form-name">
+                            <label for="form-name" class="label">
                                 First Name
                             </label>
                             <input id="form-name" placeholder="Enter name" type="text">
                         </div>
                         <div class="form-input">
-                            <label class="label" for="form-last-name">
+                            <label  for="form-last-name" class="label">
                                 Last Name
                             </label>
                             <input id="form-last-name" placeholder="Enter last name" type="text">
                         </div class="form-input">
                         <div class="form-input">
-                            <label class="label" for="form-email">
+                            <label  for="form-email" class="label">
                                 Email address
                             </label>
                             <input id="form-email" placeholder="Enter adress" type="text">
                         </div>
+                        <button class="form-button" type="submit">
+                            Submit
+                        </button>
                     </div>
-                    <div class="form-select">
-                        <label class="label" for="form-reason">
-                            Contact Reason
-                        </label>
-                        <select id="form-reason">
-                            <option selected dissabled hidden value="Choose contact reason">
-                                Choose contact reason
-                            </option>
-                            <option value="I want to make a claim">
-                                I want to make a claim
-                            </option>
-                            <option value="I want to realize a query or suggestion">
-                                I want to realize a query or suggestion
-                            </option>
-                            <option value="I want to know the memberships and costs">
-                                I want to know the memberships and costs
-                            </option>
-                        </select>
-                        <i></i>
+                    <div class="form-select-textarea">
+                        <div class="form-select">
+                            <label for="form-reason" class="label">
+                                Contact Reason
+                            </label>
+                            <select id="form-reason">
+                                <option selected dissabled hidden value="Choose contact reason">
+                                    Choose contact reason
+                                </option>
+                                <option value="I want to make a claim">
+                                    I want to make a claim
+                                </option>
+                                <option value="I want to realize a query or suggestion">
+                                    I want to realize a query or suggestion
+                                </option>
+                                <option value="I want to know the memberships and costs">
+                                    I want to know the memberships and costs
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-textarea">
+                            <label for="form-message"class="label">
+                                Message
+                            </label>
+                            <textarea placeholder="Enter your message"></textarea>
+                        </div>
                     </div>
-                    <div class="form-textarea">
-                        <label class="label">
-                            Message
-                        </label>
-                        <textarea placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="submit">
-                        Submit
-                    </button>
                 </form>
             </section>
             <section class="activities-section">
@@ -227,20 +231,20 @@
                 <h2 class="section-title">
                     Memberships
                 </h2>
-                <table>
+                <table class="membership-table">
                     <tr class="colored-tr">
                         <th class="first-column"></th>
-                        <th>
+                        <th class="membership-th">
                             Only Classes
                         </th>
-                        <th>
+                        <th class="membership-th">
                             Classic
                         </th>
-                        <th>
+                        <th class="membership-th">
                             Black
                         </th>
                     </tr>
-                    <tr>
+                    <tr class="white-tr">
                         <td>
                             Free access to the fitness room
                         </td>
@@ -251,7 +255,7 @@
                             <img src="assets/imgs/check-member-icon.png" alt="check icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-member-icon.png">
+                            <img src="assets/imgs/check-member-icon.png" alt="check-icon">
                         </td>
                     </tr>
                     <tr class="colored-tr">
@@ -265,10 +269,10 @@
                             <img src="assets/imgs/x-member-icon.png" alt="check icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-member-icon.png">
+                            <img src="assets/imgs/check-member-icon.png" alt="check-icon">
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="white-tr">
                         <td>
                             Perzonalized follow-up by a trainer
                         </td>
@@ -279,7 +283,7 @@
                             <img src="assets/imgs/check-member-icon.png" alt="check icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-member-icon.png">
+                            <img src="assets/imgs/check-member-icon.png" alt="check-icon">
                         </td>
                     </tr>
                     <tr class="colored-tr">
@@ -293,7 +297,7 @@
                             <img src="assets/imgs/check-member-icon.png" alt="check icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-member-icon.png">
+                            <img src="assets/imgs/check-member-icon.png" alt="check-icon">
                         </td>
                     </tr>
                 </table>
@@ -301,13 +305,13 @@
         </main>
         <footer>
             <div>
-                <a href="">
+                <a href="#">
                     <img src="assets/imgs/linkedin.png" alt="linkedin logo">
                 </a>
-                <a href="">
+                <a href="#">
                     <img src="assets/imgs/facebook.png" alt="facebook logo">
                 </a>
-                <a href="">
+                <a href="#">
                     <img src="assets/imgs/instagram.png" alt="instagram logo">
                 </a>
             </div>
