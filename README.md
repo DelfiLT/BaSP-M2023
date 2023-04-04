@@ -18,5 +18,13 @@ In the second week we created the landing page designed in figma in html wich co
 - Activities
 - Memberships
 
+## Week 03
+
+In the third week we added the CSS style to the landing page using pixel pefect according to the measures of the MacBook Pro 14"
+
+Colors:
+- ![#373867](https://placehold.co/15x15/373867/373867.png) `Primary Color`
+- ![#AACE9B](https://placehold.co/15x15/AACE9B/AACE9B.png) `Secondary Color`
+
 ## Authors
 - Tomasino Delfina

@@ -1,30 +1,32 @@
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #373867;
     position: fixed;
-    top: 0;
-    height: 98px;
     width: 100%;
+    height: 98px;
+    top: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #373867;
     z-index: 1;
 }
 
 aside {
-    background-color: #AACE9B;
-    display: block;
     position: fixed;
+    display: block;
     width: 313px;
     height: 100%;
     top: 98px;
+    background-color: #AACE9B;
     z-index: 1;
 }
 
 nav {
-    display: inline-block;
     margin: 19px 25px 19px 25px;
 }
 
@@ -35,25 +37,25 @@ main {
     left: 313px;
 }
 
-footer {
-    background-color: #AACE9B;
-    display: block;
-    position: relative;
-    text-align: center;
-    top: 98px;
-    padding-top: 8px;
-    height: 72px;
-    width: 1200px;
-    left: 313px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-}
-
 table, tbody, th, td, tr {
     vertical-align: middle;
     text-align: center;
+}
+
+footer {
+    display: block;
+    position: relative;
+    width: 1200px;
+    height: 72px;
+    padding-top: 8px;
+    top: 98px;
+    left: 313px;
+    background-color: #AACE9B;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 footer a {
@@ -63,43 +65,37 @@ footer a {
 
 .logo {
     display: inline-block;
-    margin: 29px;
     width: 194px;
     height: 41px;
+    margin: 29px;
 }
 
 .nav-button {
-    position: relative;
-    list-style: none;
+    width: 263px;
+    height: 38px;
+    margin-bottom: 19px;
     background: #FFFFFF;
     border: 1px solid #373867;
     border-radius: 5px;
-    height: 38px;
-    width: 263px;
-    margin-bottom: 19px;
-}
-
-.nav-button:last-child {
-    margin-bottom: 0;
 }
 
 .nav-button a {
     display: block;
-    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: #373867;
-    font-style: normal;
-    height: 38px;
-    font-size: 20px;
+    text-decoration: none;
     font-weight: 876;
-    line-height: 23px;
-    padding-top: 7.3px;
-    padding-left: 107px;
 }
 
 .nav-button img {
-    position: absolute;
-    left: 79px;
-    top: 9.86px;
+    float: left;
+    margin-left: 79px;
+    margin-right: 10px;
+}
+
+.nav-button:last-child {
+    margin-bottom: 0;
 }
 
 .contact-info {
@@ -108,29 +104,26 @@ footer a {
     top: 462.67px;
 }
 
+.contact-info h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 21px;
+    left: 31.64px;
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
 .contact-item {
-    list-style: none;
     margin-top: 19px;
     color: #373867;
-    font-size: 20px;
     line-height: 23px;
+    list-style: none;
 }
 
 .contact-item img {
     float: left;
     margin-right: 16.36px;
-}
-
-.contact-info h2 {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 21px;
-    color: #FFFFFF;
-    border-bottom: 3px solid #FFFFFF;
-    left: 31.64px;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
 }
 
 .welcome-section {
@@ -142,35 +135,36 @@ footer a {
 
 .welcome-text {
     float: left;
-    text-align: center;
     width: 485px;
     margin-top: 69px;
     margin-right: 64px;
+    text-align: center;
 }
 
 .welcome-text h1 {
-    text-transform: uppercase;
     margin: 0;
     color: #373867;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
 }
 
 .welcome-text h2 {
-    text-transform: uppercase;
     color: #49A37B;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    text-transform: uppercase;
 }
 
 .welcome-text p {
-    color: #373867;
     margin-top: 34px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    color: #373867;
+}
+
+.features-section {
+    width: 959px;
+    height: 469px;
+    margin-left: 112px;
+    margin-top: 65px;
 }
 
 .section-title {
@@ -180,13 +174,6 @@ footer a {
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
-}
-
-.features-section {
-    margin-top: 65px;
-    margin-left: 112px;
-    height: 469px;
-    width: 959px;
 }
 
 .features-section h2 {
@@ -214,26 +201,24 @@ footer a {
 }
 
 .feature-article h3 {
-    color: #373867;
     margin-top: 8px;
+    color: #373867;
     font-weight: 876;
     font-size: 24px;
     line-height: 28px;
 }
 
 .feature-article p {
-    color: #373867;
-    height: 115px;
     width: 337px;
+    height: 115px;
     margin-top: 29px;
+    color: #373867;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
 }
 
 .about-section {
-    margin-top: 70px;
     margin-left: 87px;
+    margin-top: 70px;
 }
 
 .about-section h2 {
@@ -241,41 +226,35 @@ footer a {
     margin-bottom: 51px;  
 }
 
-.about-article-first p{
+.about-article-first p {
     float: right;
-    text-align: right;
-    margin-top: 37px;
-    margin-right: 91px;
     width: 554px;
     height: 184px;
+    margin-top: 37px;
+    margin-right: 91px;
     color: #373867;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    text-align: right;
 }
 
 .about-article-second {
     margin-top: 24px;
 }
 
-.about-article-second p{
+.about-article-second p {
     float: left;
-    text-align: left;
-    margin-top: 37px;
-    margin-right: 10px;
     width: 558px;
     height: 115px;
+    margin-top: 37px;
+    margin-right: 10px;
     color: #373867;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    text-align: left;
 }
 
 .form-section {
-    margin-top: 65px;
-    margin-left: 150px;
     width: 900px;
     height: 387px;
+    margin-left: 150px;
+    margin-top: 65px;
 }
 
 .form-section h2 {
@@ -288,11 +267,11 @@ footer a {
     margin-right: 74px;
 }
 
-.label{
+.label {
     display: block;
-    color: #373867;
-    margin-bottom: 7px;
     margin-top: 23px;
+    margin-bottom: 7px;
+    color: #373867;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -307,25 +286,24 @@ footer a {
 
 .form-input input::placeholder, .form-textarea textarea::placeholder {
     color: #373867;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     opacity: 0.5;
 }
 
 .form-button {
-    border-style: none;
-    margin-top: 20px;
-    padding: 14px 36px;
     width: 123px;
     height: 47px;
+    margin-top: 20px;
+    padding: 14px 36px;
     background: #AACE9B;
+    border-style: none;
     border-radius: 5px;
     color: #373867;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
 }
 
 .form-select-textarea {
@@ -334,13 +312,12 @@ footer a {
 }
 
 .form-select select {
-    height: 36px;
     width: 566px;
+    height: 36px;
     padding: 10px 12px 10px 12px;
     border: 1px solid #373867;
     border-radius: 4px;
     color: #373867;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 }
@@ -348,16 +325,16 @@ footer a {
 .form-textarea textarea {
     width: 540px;
     height: 163px;
-    resize: none;
     padding: 10px 12px 10px 12px;
     border: 1px solid #373867;
     border-radius: 4px;
+    resize: none;
 }
 
 .activities-section {
+    height: 346px;
     margin-top: 65px;
     margin-left: 133px;
-    height: 346px;
 }
 
 .activities-section h2 {
@@ -366,13 +343,13 @@ footer a {
 }
 
 .activities-article ul {
-    list-style: disc;
     display: inline-block;
     margin-top: 22px;
     color: #373867;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
+    list-style: disc;
 }
 
 .activities-article ul li {
@@ -385,8 +362,8 @@ footer a {
 }
 
 .membership-section {
-    margin-top: 65px;
     margin-left: 109px;
+    margin-top: 65px;
     margin-bottom: 65px;
 }
 
@@ -400,16 +377,16 @@ footer a {
     font-weight: 600;
 }
 
-.first-column {
-    width: 392.62px;
+.colored-tr {
+    background-color: #D9D9D9;;
 }
 
-.white-tr, .colored-tr {
+.colored-tr, .white-tr {
     height: 58.6px;
 }
 
-.colored-tr {
-    background-color: #D9D9D9;;
+.first-column {
+    width: 392.62px;
 }
 
 .membership-th {
