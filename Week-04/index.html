@@ -73,20 +73,22 @@
             </aside>
             <main>
                 <div class="container">
-                    <section class="welcome-section">
-                        <article>
-                            <h1>
-                            Mega Roquet web
-                            </h1>
-                            <h2>
-                                Welcome
-                            </h2>
-                            <p>
-                                Mega Rocket web is a monthly management system for members and trainers so that they can dynamically sign up for their 
-                                activities in the gym.
-                            </p>
-                        </article>
-                        <img src="/assets/imgs/welcome.png" alt="modern gym with multiple machines">
+                    <section>
+                        <div class="welcome-section">
+                            <article>
+                                <h1>
+                                    Mega Roquet web
+                                </h1>
+                                <h2>
+                                    Welcome
+                                </h2>
+                                <p>
+                                    Mega Rocket web is a monthly management system for members and trainers so that they can dynamically sign up for their 
+                                    activities in the gym.
+                                </p>
+                            </article>
+                            <img src="/assets/imgs/welcome.png" alt="modern gym with multiple machines">
+                        </div>
                     </section>
                     <section>
                         <h2 class="section-title">
@@ -166,56 +168,58 @@
                             Get in touch
                         </h2>
                         <form>
-                            <div>
+                            <div class="form-section">
                                 <div>
-                                    <label for="form-name" class="label">
-                                        First Name
-                                    </label>
-                                    <input id="form-name" placeholder="Enter name" type="text">
+                                    <div>
+                                        <label for="form-name" class="label">
+                                            First Name
+                                        </label>
+                                        <input id="form-name" placeholder="Enter name" type="text">
+                                    </div>
+                                    <div>
+                                        <label  for="form-last-name" class="label">
+                                            Last Name
+                                        </label>
+                                        <input id="form-last-name" placeholder="Enter last name" type="text">
+                                    </div>
+                                    <div>
+                                        <label  for="form-email" class="label">
+                                            Email address
+                                        </label>
+                                        <input id="form-email" placeholder="Enter adress" type="text">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label  for="form-last-name" class="label">
-                                        Last Name
-                                    </label>
-                                    <input id="form-last-name" placeholder="Enter last name" type="text">
+                                    <div>
+                                        <label for="form-reason" class="label">
+                                            Contact Reason
+                                        </label>
+                                        <select id="form-reason">
+                                            <option selected dissabled hidden value="Choose contact reason">
+                                                Choose contact reason
+                                            </option>
+                                            <option value="I want to make a claim">
+                                                I want to make a claim
+                                            </option>
+                                            <option value="I want to realize a query or suggestion">
+                                                I want to realize a query or suggestion
+                                            </option>
+                                            <option value="I want to know the memberships and costs">
+                                                I want to know the memberships and costs
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="form-message"class="label">
+                                            Message
+                                        </label>
+                                        <textarea placeholder="Enter your message"></textarea>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label  for="form-email" class="label">
-                                        Email address
-                                    </label>
-                                    <input id="form-email" placeholder="Enter adress" type="text">
-                                </div>
+                                <button type="submit">
+                                    Submit
+                                </button>
                             </div>
-                            <div>
-                                <div>
-                                    <label for="form-reason" class="label">
-                                        Contact Reason
-                                    </label>
-                                    <select id="form-reason">
-                                        <option selected dissabled hidden value="Choose contact reason">
-                                            Choose contact reason
-                                        </option>
-                                        <option value="I want to make a claim">
-                                            I want to make a claim
-                                        </option>
-                                        <option value="I want to realize a query or suggestion">
-                                            I want to realize a query or suggestion
-                                        </option>
-                                        <option value="I want to know the memberships and costs">
-                                            I want to know the memberships and costs
-                                        </option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="form-message"class="label">
-                                        Message
-                                    </label>
-                                    <textarea placeholder="Enter your message"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit">
-                                Submit
-                            </button>
                         </form>
                     </section>
                     <section>

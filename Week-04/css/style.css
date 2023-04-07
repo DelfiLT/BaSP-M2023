@@ -48,11 +48,34 @@ section {
 
 button[type = "button"] {
     align-self: center;
-    background-color: #ffffff;
+    margin: 14px 0;
     padding: 10px 24px;
+    color: #373867;
+    background-color: #ffffff;
     border: 1px solid #373867;
     border-radius: 5px;
-    margin: 14px 0;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+button[type = "submit"] {
+    align-self: flex-end;
+    width: 76px;
+    height: 33px;
+    margin-top: 14px;
+    background: #AACE9B;
+    border-style: none;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 0.6em;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .desktop-text {

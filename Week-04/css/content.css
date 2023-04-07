@@ -8,6 +8,7 @@
 
 .welcome-section article {
     margin-bottom: 30px;
+    max-width: 367px;
 }
 
 .features-section {
@@ -49,4 +50,44 @@
 
 .about-section article img {
     margin-bottom: 14px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.form-section input::placeholder, .form-section textarea::placeholder {
+    color: #373867;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
+.form-section select {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    padding: 0 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: #373867;
+    font-size: 0.9em;
+}
+
+.form-section textarea {
+    width: 100%;
+    height: 148px;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    resize: none;
 }
