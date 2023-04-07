@@ -1,0 +1,52 @@
+.welcome-section {
+    text-align: center;
+}
+
+.welcome-section h2 {
+    display: none;
+}
+
+.welcome-section article {
+    margin-bottom: 30px;
+}
+
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-section article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 395px;
+}
+
+.features-section article:last-child {
+    margin-bottom: 0;
+}
+
+.features-section article img {
+    max-width: 26px;
+    max-height: 26px;
+    margin: 10px 10px 10px 40px;
+}
+
+.features-section p {
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.about-section {
+    max-width: 80%;
+}
+
+.about-section article {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section article img {
+    margin-bottom: 14px;
+}
