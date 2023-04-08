@@ -9,6 +9,10 @@ body {
     line-height: 23px;
 }
 
+main {
+    padding-top: 98px;
+}
+
 aside {
     display: none;
 }
@@ -44,6 +48,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 button[type = "button"] {
@@ -78,7 +83,27 @@ label {
     font-weight: bold;
 }
 
-.desktop-text {
+table, tbody, th, td, tr {
+    vertical-align: middle;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+th, td {
+    width: 20%;
+}
+
+tr {
+    height: 38px;
+}
+
+.tablet-text {
     display: none;
 }
 
@@ -86,8 +111,8 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 15px;
-    margin: 0 auto;
 }
 
 .section-title {
@@ -98,4 +123,46 @@ label {
     font-weight: 700;
     font-size: 1.8em;
     line-height: 35px;
+}
+
+@media (min-width: 601px) {
+
+    h3 {
+        font-size: 20px;
+    }
+
+    section {
+        max-width: 774px;
+        align-items: normal;
+    }
+
+    button[type = "button"] {
+        display: none;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .tablet-text {
+        display: inline;
+        max-width: 268px;
+        font-size: 0.6em;
+    }
+
+    .normal-text {
+        display: none;
+    }
+
+    button[type = "submit"] {
+        margin-top: 0;
+    }
+
+    tr {
+        height: 48px;
+    }
+
+    table {
+        max-width: 804px;
+    }
 }
