@@ -11,6 +11,7 @@ body {
 
 main {
     padding-top: 98px;
+    flex-grow: 1;
 }
 
 aside {
@@ -103,10 +104,6 @@ tr {
     height: 38px;
 }
 
-.tablet-text {
-    display: none;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -144,16 +141,6 @@ tr {
         margin-bottom: 50px;
     }
 
-    .tablet-text {
-        display: inline;
-        max-width: 268px;
-        font-size: 0.6em;
-    }
-
-    .normal-text {
-        display: none;
-    }
-
     button[type = "submit"] {
         margin-top: 0;
     }
@@ -164,5 +151,24 @@ tr {
 
     table {
         max-width: 804px;
+    }
+}
+
+@media (min-width: 1025px) {
+    aside {
+        display: inline-block;
+    }
+
+    .page {
+        display: flex;
+        height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        margin-left: 313px;
     }
 }

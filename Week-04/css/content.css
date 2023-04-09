@@ -49,7 +49,6 @@
 
 .about-first-article img, .about-second-article img {
     margin-bottom: 14px;
-    max-width: 279px;
 }
 
 .form-section {
@@ -176,6 +175,7 @@
     .about-first-article {
         flex-direction: row;
         text-align: right;
+        margin-bottom: 45px;
     }
 
     .about-second-article {
@@ -188,7 +188,15 @@
     }
 
     .about-first-article img {
-        margin-bottom: 45px;
+        max-width: 243px;
+    }
+
+    .about-second-article img {
+        max-width: 243px;
+    }
+
+    .about-first-article p, .about-second-article p {
+        font-size: 0.7em;
     }
 
     .form-section {
