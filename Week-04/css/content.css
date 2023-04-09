@@ -130,7 +130,7 @@
     }
 
     .welcome-section article {
-        max-width: 485px;
+        max-width: 50%;
         margin-right: 41px;
         margin-bottom: 0;
     }
@@ -143,7 +143,7 @@
     }
 
     .welcome-section img {
-        max-width: 367px;
+        max-width: 50%;
     }
 
     .features-section {
@@ -187,11 +187,7 @@
         flex-direction: row-reverse;
     }
 
-    .about-first-article img {
-        max-width: 243px;
-    }
-
-    .about-second-article img {
+    .about-first-article img, .about-second-article img {
         max-width: 243px;
     }
 
@@ -214,13 +210,14 @@
 
     .activities-section {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .activities-list {
-        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
         list-style: disc;
-        margin: 0 90px 0 0;
         font-size: 1.5em;
         width: auto;
     }
@@ -228,4 +225,34 @@
     .activities-section img {
         max-width: 378px;
     }
+}
+
+@media (min-width: 1025px) {
+
+    .features-section article {
+        width: 395px;;
+    }
+
+    .features-section article p {
+        font-size: 20px;
+        margin-left: 41px;
+    }
+
+    .about-first-article img, .about-second-article img {
+        max-width: 453px;
+    }
+
+    .about-first-article p, .about-second-article p {
+        font-size: 20px;
+        max-width: 554px;
+    }    
+
+    .form-section textarea {
+        height: 190px;
+    }
+
+    .activities-section img {
+        max-width: 636px;
+    }
+
 }

@@ -10,3 +10,9 @@
     background-color: #373867;
     z-index: 1;
 }
+
+@media (min-width: 1025px) {
+    .sidebar-icon {
+        display: none;
+    }
+}

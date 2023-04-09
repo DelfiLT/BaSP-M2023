@@ -10,8 +10,7 @@ body {
 }
 
 main {
-    padding-top: 98px;
-    flex-grow: 1;
+    margin-top: 98px;
 }
 
 aside {
@@ -65,7 +64,6 @@ button[type = "button"] {
 }
 
 button[type = "submit"] {
-    align-self: flex-end;
     width: 76px;
     height: 33px;
     margin-top: 14px;
@@ -155,8 +153,22 @@ tr {
 }
 
 @media (min-width: 1025px) {
+
+    section {
+        max-width: 1050px;
+        margin-top: 65px;
+    }
+
     aside {
         display: inline-block;
+    }
+
+    button[type = "submit"] {
+        width: 123px;
+        height: 47px;
+        padding: 14px 36px;
+        font-weight: bold;
+        font-size: 16px;
     }
 
     .page {
@@ -171,4 +183,17 @@ tr {
         height: 100vh;
         margin-left: 313px;
     }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    table {
+        max-width: 100%;
+    }
+
+    tr {
+        height: 58px;
+    }
+
 }
