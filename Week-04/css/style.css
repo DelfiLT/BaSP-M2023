@@ -5,20 +5,16 @@
 body {
     color: #373867;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 23px;
-}
-
-main {
-    margin-top: 98px;
+    font-size: 1.25em;
+    line-height: 1.2em;
 }
 
 aside {
     display: none;
 }
 
-section {
-    margin-top: 30px;
+main {
+    margin-top: 98px;
 }
 
 a {
@@ -34,14 +30,12 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.8em;
-    line-height: 47px;
 }
 
 h3 {
     color: #373867;
     font-weight: 876;
     font-size: 0.9em;
-    line-height: 28px;
 }
 
 section {
@@ -49,21 +43,53 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 30px;
 }
 
-button[type = "button"] {
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+table {
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
+th, td {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    height: 38px;
+}
+
+.about-button {
     align-self: center;
     margin: 14px 0;
     padding: 10px 24px;
-    color: #373867;
     background-color: #ffffff;
     border: 1px solid #373867;
     border-radius: 5px;
-    font-size: 0.7em;
+    color: #373867;
     font-weight: bold;
+    font-size: 0.7em;
 }
 
-button[type = "submit"] {
+.desktop-button {
+    display: none;
+}
+
+.mobile-button {
+    align-self: flex-end;
     width: 76px;
     height: 33px;
     margin-top: 14px;
@@ -75,37 +101,9 @@ button[type = "submit"] {
     font-size: 0.6em;
 }
 
-label {
-    display: block;
-    margin-bottom: 7px;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-
-table, tbody, th, td, tr {
-    vertical-align: middle;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    font-size: 0.7em;
-    font-weight: bold;
-    line-height: 1em;
-}
-
-th, td {
-    width: 20%;
-}
-
-tr {
-    height: 38px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 0 15px;
 }
@@ -117,21 +115,50 @@ tr {
     color: #373867;
     font-weight: 700;
     font-size: 1.8em;
-    line-height: 35px;
+    line-height: 1em;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }
 
 @media (min-width: 601px) {
-
     h3 {
-        font-size: 20px;
+        font-size: 1em;
     }
 
     section {
-        max-width: 774px;
         align-items: normal;
+        max-width: 774px;
     }
 
-    button[type = "button"] {
+    .about-button {
+        display: none;
+    }
+
+    .desktop-button {
+        display: inline-block;
+        width: 123px;
+        height: 47px;
+        margin-top: 8px;
+        padding: 14px 36px;
+        background: #AACE9B;
+        border-style: none;
+        border-radius: 5px;
+        color: #373867;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    .mobile-button {
         display: none;
     }
 
@@ -139,53 +166,27 @@ tr {
         margin-bottom: 50px;
     }
 
-    button[type = "submit"] {
-        margin-top: 0;
+    table {
+        max-width: 804px;
     }
 
     tr {
         height: 48px;
     }
-
-    table {
-        max-width: 804px;
-    }
 }
 
 @media (min-width: 1025px) {
-
-    section {
-        max-width: 1050px;
-        margin-top: 65px;
-    }
-
     aside {
         display: inline-block;
     }
-
-    button[type = "submit"] {
-        width: 123px;
-        height: 47px;
-        padding: 14px 36px;
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .page {
-        display: flex;
-        height: 100vh;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        margin-left: 313px;
-    }
-
+    
     h3 {
-        font-size: 24px;
+        font-size: 1.2em;
+    }
+    
+    section {
+        max-width: 1050px;
+        margin-top: 65px;
     }
 
     table {
@@ -196,4 +197,7 @@ tr {
         height: 58px;
     }
 
+    .content {
+        margin-left: 313px;
+    }
 }

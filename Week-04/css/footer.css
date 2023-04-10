@@ -3,15 +3,13 @@ footer {
     max-height: 72px;
     margin-top: 30px;
     padding: 7px 0;
-    flex-grow: 1;
     background-color: #AACE9B;
     color: #FFFFFF;
-    text-align: center;
     font-weight: 600;
     font-size: 0.8em;
 }
 
-.footer-links img{
+.footer-links img {
     margin-right: 30px;
 }
 

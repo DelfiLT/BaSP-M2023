@@ -26,5 +26,11 @@ Colors:
 - ![#373867](https://placehold.co/15x15/373867/373867.png) `Primary Color`
 - ![#AACE9B](https://placehold.co/15x15/AACE9B/AACE9B.png) `Secondary Color`
 
+## Week 04
+
+In the fourth week we redid the CSS style using the properties of Flex and we made it completely responsive for mobile phone, tablet and desktop 
+
+Now you can also see the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-04/index.html)
+
 ## Authors
 - Tomasino Delfina
