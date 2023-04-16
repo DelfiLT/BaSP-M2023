@@ -32,5 +32,19 @@ In the fourth week we redid the CSS style using the properties of Flex and we ma
 
 Now you can also see the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-04/index.html)
 
+## Week 05
+
+In the fifth week we started learning and practicing JavaScript ES5.
+
+It includes exercises of:
+- Variables and operators
+- Strings
+- Arrays
+- If-Else
+- For
+- Functions
+
+You can try them on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-05/index.html)
+
 ## Authors
 - Tomasino Delfina
