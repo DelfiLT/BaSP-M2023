@@ -21,10 +21,10 @@ console.log('> EXERCISE 5C <');
 var sentence = '';
 
 for (i = 0 ; i < words.length; i++) {
-    sentence = sentence + ' ' +  words[i];
+    sentence += words[i] + ' ';
 }
 
-alert('Answer: ' + sentence);
+alert('Answer: ' + sentence.trim());
 
 console.log('> EXERCISE 5D <');
 

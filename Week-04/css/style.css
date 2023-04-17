@@ -36,7 +36,7 @@ h1 {
 h3 {
     color: #373867;
     font-weight: 876;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 section {
@@ -57,7 +57,7 @@ label {
 table {
     width: 100%;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.6em;
     line-height: 1em;
 }
 
@@ -70,7 +70,7 @@ th, td {
 tr {
     display: flex;
     align-items: center;
-    height: 38px;
+    height: 40px;
 }
 
 .about-button {
@@ -132,9 +132,6 @@ tr {
 }
 
 @media (min-width: 601px) {
-    h3 {
-        font-size: 1em;
-    }
 
     section {
         align-items: normal;
@@ -167,8 +164,13 @@ tr {
         margin-bottom: 50px;
     }
 
+    .container {
+        padding: 0 30px;
+    }
+
     table {
         max-width: 804px;
+        font-size: 0.8em;
     }
 
     tr {
@@ -177,14 +179,15 @@ tr {
 }
 
 @media (min-width: 1025px) {
+
     aside {
         display: inline-block;
     }
-    
+
     h3 {
         font-size: 1.2em;
     }
-    
+
     section {
         max-width: 1050px;
         margin-top: 65px;
@@ -192,6 +195,7 @@ tr {
 
     table {
         max-width: 100%;
+        font-size: 1em;
     }
 
     tr {
@@ -200,5 +204,9 @@ tr {
 
     .content {
         margin-left: 313px;
+    }
+
+    .container {
+        padding: 0 70px;
     }
 }

@@ -28,7 +28,7 @@ Colors:
 
 ## Week 04
 
-In the fourth week we redid the CSS style using the properties of Flex and we made it completely responsive for mobile phone, tablet and desktop 
+In the fourth week we redid the CSS style using the properties of Flex and we made it completely responsive for mobile phone, tablet and desktop
 
 Now you can also see the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-04/index.html)
 
