@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+    max-height: 72px;
+    margin-top: 30px;
+    padding: 7px 0;
+    background-color: #AACE9B;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.footer-links img {
+    margin-right: 30px;
+}
+
+.footer-links a:last-child img {
+    margin-right: 0;
+}
