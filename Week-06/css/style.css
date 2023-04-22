@@ -131,6 +131,50 @@ tr {
     height: 100vh;
 }
 
+.input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: #373867;
+}
+
+.input::placeholder {
+    color: #373867;
+    font-size: 1em;
+    opacity: 0.5;
+}
+
+.form-field {
+    width: 80%;
+    margin-bottom: 15px;
+    height: 70px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.5em;
+}
+
+.input-error-message {
+    font-size: 14px;
+    color: red;
+}
+
+.input-error {
+    border: 1px solid red;
+    color: red;
+}
+
+.label-error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (min-width: 601px) {
 
     section {
