@@ -167,6 +167,10 @@ tr {
     color: red;
 }
 
+.input-error::placeholder {
+    color: red;
+}
+
 .label-error {
     color: red;
 }
