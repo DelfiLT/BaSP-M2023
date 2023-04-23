@@ -5,13 +5,13 @@
     width: 100%;
     height: 100vh;
     padding: 0 15px;
+    margin-top: 98px;
 }
 
 .login-page main {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 0;
 }
 
 .login-box {
@@ -71,12 +71,6 @@
     color: #373867;
     font-size: 16px;
     font-weight: bold;
-}
-
-@media (min-width: 601px) {
-    .form-page main {
-        margin-top: 0;
-    }
 }
 
 @media (min-width: 1025px) {
