@@ -1,19 +1,7 @@
 function validateSignUp() {
     const form = document.querySelector('.sign-up-form');
 
-    var button = document.querySelector('.sign-up-button');
-    var nameError = '';
-    var surnameError = '';
-    var dniError = '';
-    var birthError = '';
-    var phoneError = '';
-    var addressError = '';
-    var cityError = '';
-    var postalCodeError = '';
-    var emailError = '';
-    var membershipError = '';
-    var passwordError = '';
-    var repeatPassError = '';
+    var errors = [];
 
     const addError = (label, input, span) => {
         label.classList.add('label-error');
@@ -37,12 +25,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-name'){
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[0] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Name is required';
-                nameError = 'Name is required';
+                errors[0] = 'Name is required';
                 return false;
             }
 
@@ -56,14 +45,14 @@ function validateSignUp() {
             if (haveNumbers) {
                 addError(label, input, span);
                 span.innerText = 'Name contains invalid characters';
-                nameError = 'Name contains invalid characters';
+                errors[0] = 'Name contains invalid characters';
                 return false;
             }
 
             if (input.value.length <= 3 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Name too short';
-                nameError = 'Name too short';
+                errors[0] = 'Name too short';
                 return false;
             }
         }
@@ -71,12 +60,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-surname') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[1] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Surname is required';
-                surnameError = 'Surname is required';
+                errors[1] = 'Surname is required';
                 return false;
             }
 
@@ -90,14 +80,14 @@ function validateSignUp() {
             if (haveNumbers) {
                 addError(label, input, span);
                 span.innerText = 'Surname contains invalid characters';
-                surnameError = 'Surname contains invalid characters';
+                errors[1] = 'Surname contains invalid characters';
                 return false;
             }
 
             if (input.value.length <= 3 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Surname too short';
-                surnameError = 'Surname too short';
+                errors[1] = 'Surname too short';
                 return false;
             }
         }
@@ -105,12 +95,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-dni') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[2] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'DNI is required';
-                dniError = 'DNI is required';
+                errors[2] = 'DNI is required';
                 return false;
             }
 
@@ -123,14 +114,14 @@ function validateSignUp() {
             if (haveLetters) {
                 addError(label, input, span);
                 span.innerText = 'DNI contains invalid characters';
-                dniError = 'DNI contains invalid characters';
+                errors[2] = 'DNI contains invalid characters';
                 return false;
             }
 
             if (input.value.length < 7 || input.value.length > 8 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Invalid DNI';
-                dniError = 'Invalid DNI';
+                errors[2] = 'Invalid DNI';
                 return false;
             }
         }
@@ -138,12 +129,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-birth') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[3] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Birth date is required';
-                birthError = 'Birth date is required';
+                errors[3] = 'Birth date is required';
                 return false;
             }
         }
@@ -151,12 +143,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-phone') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[4] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Phone is required';
-                phoneError = 'Phone is required';
+                errors[4] = 'Phone is required';
                 return false;
             }
 
@@ -169,21 +162,21 @@ function validateSignUp() {
             if (haveLetters) {
                 addError(label, input, span);
                 span.innerText = 'Phone contains invalid characters';
-                phoneError = 'Phone contains invalid characters';
+                errors[4] = 'Phone contains invalid characters';
                 return false;
             }
 
             if (input.value[0] == 0) {
                 addError(label, input, span);
                 span.innerText = `Phone can't start with 0`;
-                phoneError = `Phone can't start with 0`;
+                errors[4] = `Phone can't start with 0`;
                 return false;
             }
 
             if (input.value.length !== 10 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Invalid phone';
-                phoneError = 'Invalid phone';
+                errors[4] = 'Invalid phone';
                 return false;
             }
         }
@@ -191,12 +184,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-address') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[5] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Address is required';
-                addressError = 'Address is required';
+                errors[5] = 'Address is required';
                 return false;
             }
 
@@ -204,7 +198,7 @@ function validateSignUp() {
                 if(input.value.indexOf(' ') === -1) {
                     addError(label, input, span);
                     span.innerText = 'Invalid Address';
-                    addressError = 'Invalid Address';
+                    errors[5] = 'Invalid Address';
                     return false;
                 }
 
@@ -215,7 +209,7 @@ function validateSignUp() {
                 if (addressStreet.length < 5) {
                     addError(label, input, span);
                     span.innerText = 'Street name too short';
-                    addressError = 'Street name too short';
+                    errors[5] = 'Street name too short';
                     return false;
                 }
 
@@ -228,14 +222,14 @@ function validateSignUp() {
                 if (haveLetters) {
                     addError(label, input, span);
                     span.innerText = 'Address number missing';
-                    addressError = 'Address number missing';
+                    errors[5] = 'Address number missing';
                     return false;
                 }
 
                 if (addressNumber.length > 4 || addressNumber.length == 0) {
                     addError(label, input, span);
                     span.innerText = 'Invalid address number';
-                    addressError = 'Invalid address number';
+                    errors[5] = 'Invalid address number';
                     return false;
                 }
             }
@@ -244,12 +238,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-city') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[6] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'City is required';
-                cityError = 'City is required';
+                errors[6] = 'City is required';
                 return false;
             }
 
@@ -263,14 +258,14 @@ function validateSignUp() {
             if (haveInvalidChar) {
                 addError(label, input, span);
                 span.innerText = 'City contains invalid characters';
-                cityError = 'City contains invalid characters';
+                errors[6] = 'City contains invalid characters';
                 return false;
             }
 
             if(input.value.length <= 3 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'City name too short';
-                cityError = 'City name too short';
+                errors[6] = 'City name too short';
                 return false;
             }
         }
@@ -278,12 +273,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-code') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[7] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Postal Code is required';
-                postalCodeError = 'Postal Code is required';
+                errors[7] = 'Postal Code is required';
                 return false;
             }
 
@@ -296,14 +292,14 @@ function validateSignUp() {
             if (haveLetters) {
                 addError(label, input, span);
                 span.innerText = 'Postal Code contains invalid characters';
-                postalCodeError = 'Postal Code contains invalid characters';
+                errors[7] = 'Postal Code contains invalid characters';
                 return false;
             }
 
             if(input.value.length < 4 || input.value.length > 5 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Invalid Postal Code';
-                postalCodeError = 'Invalid Postal Code';
+                errors[7] = 'Invalid Postal Code';
                 return false;
             }
         }
@@ -311,12 +307,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-email') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[8] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Email is required';
-                emailError = 'Email is required';
+                errors[8] = 'Email is required';
                 return false;
             }
 
@@ -324,7 +321,7 @@ function validateSignUp() {
             if(!emailExpression.test(input.value)) {
                 addError(label, input, span);
                 span.innerText = 'Invalid Email';
-                emailError = 'Invalid Email';
+                errors[8] = 'Invalid Email';
                 return false;
             }
         }
@@ -332,12 +329,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-membership') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[9] = '';
+            });
 
             if(input.value === 'choose-membership') {
                 addError(label, input, span);
                 span.innerText = 'Please select an option';
-                membershipError = 'Please select an option';
+                errors[9] = 'Please select an option';
                 return false;
             }
         }
@@ -345,12 +343,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-pass') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[10] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Password is required';
-                passwordError = 'Password is required';
+                errors[10] = 'Password is required';
                 return false;
             }
 
@@ -364,7 +363,7 @@ function validateSignUp() {
             if(!hasUppercase) {
                 addError(label, input, span);
                 span.innerText = 'Password must have one uppercase';
-                passwordError = 'Password must have one uppercase';
+                errors[10] = 'Password must have one uppercase';
                 return false;
             }
 
@@ -378,14 +377,14 @@ function validateSignUp() {
             if(!hasNumber) {
                 addError(label, input, span);
                 span.innerText = 'Password must have a number';
-                passwordError = 'Password must have a number';
+                errors[10] = 'Password must have a number';
                 return false;
             }
 
             if(input.value.length < 8 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Password too short';
-                passwordError = 'Password too short';
+                errors[10] = 'Password too short';
                 return false;
             }
         }
@@ -393,12 +392,13 @@ function validateSignUp() {
         if(input.getAttribute('id') === 'sign-up-repeatpass') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
-            })
+                errors[11] = '';
+            });
 
             if (!input.value) {
                 addError(label, input, span);
                 span.innerText = 'Repeat Password is required';
-                repeatPassError = 'Repeat Password is required';
+                errors[11] = 'Repeat Password is required';
                 return false;
             }
 
@@ -406,7 +406,7 @@ function validateSignUp() {
             if (input.value !== password) {
                 addError(label, input, span);
                 span.innerText = `Password doesn't match`;
-                repeatPassError = `Password doesn't match`;
+                errors[11] = `Password doesn't match`;
                 return false;
             }
         }
@@ -422,15 +422,27 @@ function validateSignUp() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        var valid = true;
+        let message = '';
+        let inputValue = '';
         let inputGroup = Array.from(form.querySelectorAll('.input'));
         for (input of inputGroup) {
-            validateInputs(input);
+           validateInputs(input);
         }
-        if(!valid) {
-            alert(nameError + '\n' + surnameError + '\n' + dniError + '\n' + birthError + '\n' + phoneError + '\n' +
-            addressError + '\n' + cityError + '\n' + postalCodeError + '\n' + emailError + '\n' + membershipError
-            + '\n' + passwordError + '\n' + repeatPassError);
+
+        errors.forEach(error => {
+            if (error.length !== 0){
+                message += error + '\n';
+            }
+        });
+
+        if(message.length !== 0) {
+            alert(message);
+        } else {
+            inputGroup.forEach(input => {
+                let label = input.parentElement.querySelector('.form-label').textContent;
+                inputValue += label.trim() + ': ' + input.value + '\n';
+            });
+            alert(inputValue);
         }
     });
 

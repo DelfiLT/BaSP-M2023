@@ -78,16 +78,18 @@
                             </h1>
                             <form class="login-form">
                                 <div class="form-field">
-                                    <label for="login-username" class="form-label">
-                                        Username
+                                    <label for="login-email" class="form-label">
+                                        Email
                                     </label>
-                                    <input id="login-username" class="input" placeholder="Username" type="text">
+                                    <input id="login-email" class="input" placeholder="Username" type="text">
+                                    <span class="input-error-message hidden"></span>
                                 </div>
                                 <div class="form-field">
                                     <label for="login-pass" class="form-label">
                                         Password
                                     </label>
                                     <input id="login-pass" class="input" placeholder="Password" type="password">
+                                    <span class="input-error-message hidden"></span>
                                 </div>
                                 <div class="checkbox">
                                     <input id="remember-checkbox" type="checkbox"></input>
@@ -107,5 +109,6 @@
                 </main>
             </div>
         </div>
+        <script src="../js/login.js"></script>
     </body>
 </html>
