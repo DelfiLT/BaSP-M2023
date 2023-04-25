@@ -16,13 +16,13 @@ function validateSignUp() {
         span.innerText = '';
     }
 
-    function validateInputs (inputBlured) {
+    function validateInputs(inputBlured) {
         let inputGroup = inputBlured.parentElement;
         let label = inputGroup.querySelector('.form-label');
-        let input = inputGroup.querySelector('.input');
+        let input = inputGroup.querySelector('input');
         let span = inputGroup.querySelector('span');
 
-        if(input.getAttribute('id') === 'login-email'){
+        if (input.getAttribute('id') === 'login-email') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
                 errors[0] = '';
@@ -36,7 +36,7 @@ function validateSignUp() {
             }
 
             var emailExpression = new RegExp('^[^@]+@[^@]+.[a-zA-Z]{2,}$');
-            if(!emailExpression.test(input.value)) {
+            if (!emailExpression.test(input.value)) {
                 addError(label, input, span);
                 span.innerText = 'Invalid Email';
                 errors[0] = 'Invalid Email';
@@ -44,7 +44,7 @@ function validateSignUp() {
             }
         }
 
-        if(input.getAttribute('id') === 'login-pass') {
+        if (input.getAttribute('id') === 'login-pass') {
             input.addEventListener('focus', () => {
                 removeError(label, input, span);
                 errors[1] = '';
@@ -64,7 +64,7 @@ function validateSignUp() {
                     hasUppercase = true;
                 }
             }
-            if(!hasUppercase) {
+            if (!hasUppercase) {
                 addError(label, input, span);
                 span.innerText = 'Password must have one uppercase';
                 errors[1] = 'Password must have one uppercase';
@@ -74,18 +74,18 @@ function validateSignUp() {
             var hasNumber = false;
             for (let i = 0; i < input.value.length; i++) {
                 let char = input.value.charCodeAt(i);
-                if ((char >=48 && char <= 57) && input.value) {
+                if ((char >= 48 && char <= 57) && input.value) {
                     hasNumber = true;
                 }
             }
-            if(!hasNumber) {
+            if (!hasNumber) {
                 addError(label, input, span);
                 span.innerText = 'Password must have a number';
                 errors[1] = 'Password must have a number';
                 return false;
             }
 
-            if(input.value.length < 8 && input.value) {
+            if (input.value.length < 8 && input.value) {
                 addError(label, input, span);
                 span.innerText = 'Password too short';
                 errors[1] = 'Password too short';
@@ -99,8 +99,8 @@ function validateSignUp() {
     Array.from(form.elements).forEach(element => {
         element.addEventListener('blur', event => {
             validateInputs(event.target);
-        })
-    })
+        });
+    });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -108,16 +108,16 @@ function validateSignUp() {
         let inputValue = '';
         let inputGroup = Array.from(form.querySelectorAll('.input'));
         for (input of inputGroup) {
-           validateInputs(input);
+            validateInputs(input);
         }
 
         errors.forEach(error => {
-            if (error.length !== 0){
+            if (error.length !== 0) {
                 message += error + '\n';
             }
         });
 
-        if(message.length !== 0) {
+        if (message.length !== 0) {
             alert(message);
         } else {
             inputGroup.forEach(input => {

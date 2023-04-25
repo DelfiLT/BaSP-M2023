@@ -138,6 +138,15 @@ function validateSignUp() {
                 errors[3] = 'Birth date is required';
                 return false;
             }
+            let date = input.value;
+            let dateSplit = date.split('-');
+
+            if ((parseInt(dateSplit[0]) < 1950) || (parseInt(dateSplit[0]) > 2005)) {
+                addError(label, input, span);
+                span.innerText = 'Invalid year';
+                errors[3] = 'Invalid year';
+                return false;
+            }
         }
 
         if(input.getAttribute('id') === 'sign-up-phone') {
@@ -221,8 +230,8 @@ function validateSignUp() {
                   }
                 if (haveLetters) {
                     addError(label, input, span);
-                    span.innerText = 'Address number missing';
-                    errors[5] = 'Address number missing';
+                    span.innerText = 'Invalid address number';
+                    errors[5] = 'Invalid address number';
                     return false;
                 }
 
@@ -230,6 +239,20 @@ function validateSignUp() {
                     addError(label, input, span);
                     span.innerText = 'Invalid address number';
                     errors[5] = 'Invalid address number';
+                    return false;
+                }
+
+                var haveInvalidChar = false;
+                for (let i = 0; i < input.value.length; i++) {
+                    let char = input.value.charCodeAt(i);
+                    if (!(char >= 65 && char <= 90) && !(char >= 97 && char <= 122) && !(char >=48 && char <= 57) && !(char == 32)) {
+                      haveInvalidChar = true;
+                    }
+                }
+                if (haveInvalidChar) {
+                    addError(label, input, span);
+                    span.innerText = 'Address contains invalid characters';
+                    errors[5] = 'Address contains invalid characters';
                     return false;
                 }
             }
@@ -417,8 +440,8 @@ function validateSignUp() {
     Array.from(form.elements).forEach(element => {
         element.addEventListener('blur', event => {
             validateInputs(event.target);
-        })
-    })
+        });
+    });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -440,12 +463,18 @@ function validateSignUp() {
         } else {
             inputGroup.forEach(input => {
                 let label = input.parentElement.querySelector('.form-label').textContent;
-                inputValue += label.trim() + ': ' + input.value + '\n';
+                if (input.getAttribute('id') === 'sign-up-birth') {
+                    let date = input.value;
+                    let dateSplit = date.split('-');
+                    let dateFormat = dateSplit[2] + '/' + dateSplit[1] + '/' + dateSplit[0];
+                    inputValue += label.trim() + ': ' + dateFormat + '\n';
+                } else {
+                    inputValue += label.trim() + ': ' + input.value + '\n';
+                }
             });
             alert(inputValue);
         }
     });
-
 }
 
 validateSignUp();

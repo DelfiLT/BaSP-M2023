@@ -4,8 +4,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 0 15px;
     margin-top: 98px;
+    padding: 0 15px;
 }
 
 .sign-up-page main {
@@ -19,9 +19,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000000;
     width: 830px;
     padding: 36px 0 36px 0;
+    border: 1px solid #000000;
 }
 
 .sign-up-form {
@@ -38,18 +38,21 @@
 }
 
 .sign-up-button {
-    padding: 14px 36px;
+    align-self: center;
     margin-top: 20px;
+    padding: 14px 36px;
     background: #AACE9B;
     border: 0px;
     border-radius: 5px;
     color: #373867;
-    font-size: 16px;
+    font-size: 0.8em;
     font-weight: bold;
-    align-self: center;
 }
 
 @media (min-width: 601px) {
+    .sign-up-page main {
+        margin-top: 0;
+    }
 
     .sign-up-box {
         height: 650px;

@@ -46,5 +46,13 @@ It includes exercises of:
 
 You can try them on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-05/index.html)
 
+## Week 06
+
+In the sixth week we made the login and sign up page with HTML and CSS, and we validated all the inputs of their forms
+
+You can check every validation in the requirements document
+
+You can try the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-06/views/index.html)
+
 ## Authors
 - Tomasino Delfina
