@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Login
+        </title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/aside.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+                <a href="index.html">
+                    <img src = "../../assets/imgs/logo-mega-rocket.png" alt="Mega rocket logo">
+                </a>
+                <img class="sidebar-icon" src="../../assets/imgs/sidebar-icon.png" alt="hamburguer menu">
+        </header>
+        <div class="page">
+            <aside>
+                <div class="aside">
+                    <nav>
+                        <ul>
+                            <li class="nav-button">
+                                <a href="index.html">
+                                    <img src="../../assets/imgs/home-icon.png" alt="home icon">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-button">
+                                <a href="sign-up.html">
+                                    <img src="../../assets/imgs/sign-up-icon.png" alt="sign up icon">
+                                    Sign Up
+                                </a>
+                            </li>
+                            <li class="nav-button">
+                                <a href="login.html">
+                                    <img src="../../assets/imgs/sign-in-icon.png" alt="sign in">
+                                    Sign In
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contact-info">
+                        <h2>
+                            Contact Information
+                        </h2>
+                        <ul class="contact-items-list">
+                            <li class="contact-item">
+                                <img src="../../assets/imgs/email-icon.png" alt="email icon">
+                                information@untitled.tld
+                            </li>
+                            <li class="contact-item">
+                                <img src="../../assets/imgs/phone-icon.png" alt="phone icon">
+                                (000) 000-0000
+                            </li>
+                            <li class="contact-item">
+                                <img src="../../assets/imgs/home-icon2.png" alt="home icon">
+                                1234 Somewhere Road #8254 Nashville, TN
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="login-page">
+                <main>
+                    <div class="login-box">
+                        <div class="login">
+                            <h1 class="login-title">
+                                Log In
+                            </h1>
+                            <form class="login-form">
+                                <div class="form-field">
+                                    <label for="login-email" class="form-label">
+                                        Email
+                                    </label>
+                                    <input id="login-email" class="input" placeholder="Username" type="text">
+                                    <span class="input-error-message hidden"></span>
+                                </div>
+                                <div class="form-field">
+                                    <label for="login-pass" class="form-label">
+                                        Password
+                                    </label>
+                                    <input id="login-pass" class="input" placeholder="Password" type="password">
+                                    <span class="input-error-message hidden"></span>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="remember-checkbox" type="checkbox">
+                                    <label for="remember-checkbox" class="form-label">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <a href="#" class="recover-pass-link">
+                                    Forgot your Password?
+                                </a>
+                                <button type="submit" class="login-button">
+                                    Enter
+                                </button>
+                            </form>
+                         </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="../js/login.js"></script>
+    </body>
+</html>
