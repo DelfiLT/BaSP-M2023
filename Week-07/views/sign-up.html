@@ -74,113 +74,131 @@
                 <main>
                     <div class="sign-up-box">
                         <form class="sign-up-form">
-                            <div class="left-inputs">
-                                <div class="form-field">
-                                    <label for="sign-up-name" class="form-label">
-                                        Name
-                                    </label>
-                                    <input id="sign-up-name" class="input" placeholder="Enter Name" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-dni" class="form-label">
-                                        DNI
-                                    </label>
-                                    <input id="sign-up-dni" class="input" placeholder="Enter DNI" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-phone" class="form-label">
-                                        Phone
-                                    </label>
-                                    <input id="sign-up-phone" class="input" placeholder="Enter phone number" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-city" class="form-label">
-                                        City
-                                    </label>
-                                    <input id="sign-up-city" class="input" placeholder="Enter city" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-email" class="form-label">
-                                        Email
-                                    </label>
-                                    <input id="sign-up-email" class="input" placeholder="Enter email" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-pass" class="form-label">
-                                        Password
-                                    </label>
-                                    <input id="sign-up-pass" class="input" placeholder="Enter password" type="password">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-name" class="form-label">
+                                    Name
+                                </label>
+                                <input id="sign-up-name" class="input" placeholder="Enter Name" type="text">
+                                <span class="input-error-message hidden"></span>
                             </div>
-                            <div class="right-inputs">
-                                <div class="form-field">
-                                    <label for="sign-up-surname" class="form-label">
-                                        Surname
-                                    </label>
-                                    <input id="sign-up-surname" class="input" placeholder="Enter surame" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-birth" class="form-label">
-                                        Birth
-                                    </label>
-                                    <input id="sign-up-birth" class="input" placeholder="Enter birth" type="date">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-address" class="form-label">
-                                        Address
-                                    </label>
-                                    <input id="sign-up-address" class="input" placeholder="Enter address" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-code" class="form-label">
-                                        Postal Code
-                                    </label>
-                                    <input id="sign-up-code" class="input" placeholder="Enter postal code" type="text">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-membership" class="form-label">
-                                        Membership
-                                    </label>
-                                    <select id="sign-up-membership" class="input">
-                                        <option value="choose-membership" selected disabled hidden>
-                                            Choose a membership
-                                        </option>
-                                        <option value="only">
-                                            Only Classes
-                                        </option>
-                                        <option value="classic">
-                                            Classic
-                                        </option>
-                                        <option value="black">
-                                            Black
-                                        </option>
-                                    </select>
-                                    <span class="input-error-message hidden"></span>
-                                </div>
-                                <div class="form-field">
-                                    <label for="sign-up-repeatpass" class="form-label">
-                                        Repeat password
-                                    </label>
-                                    <input id="sign-up-repeatpass" class="input" placeholder="Enter repeated password" type="password">
-                                    <span class="input-error-message hidden"></span>
-                                </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-surname" class="form-label">
+                                    Surname
+                                </label>
+                                <input id="sign-up-surname" class="input" placeholder="Enter surame" type="text">
+                                <span class="input-error-message hidden"></span>
                             </div>
-                            <button type="submit" class="sign-up-button">
-                                Register
-                            </button>
+                            <div class="signup-form-field">
+                                <label for="sign-up-dni" class="form-label">
+                                    DNI
+                                </label>
+                                <input id="sign-up-dni" class="input" placeholder="Enter DNI" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-birth" class="form-label">
+                                    Birth
+                                </label>
+                                <input id="sign-up-birth" class="input" placeholder="Enter birth" type="date">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-phone" class="form-label">
+                                    Phone
+                                </label>
+                                <input id="sign-up-phone" class="input" placeholder="Enter phone number" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-address" class="form-label">
+                                    Address
+                                </label>
+                                <input id="sign-up-address" class="input" placeholder="Enter address" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-city" class="form-label">
+                                    City
+                                </label>
+                                <input id="sign-up-city" class="input" placeholder="Enter city" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-code" class="form-label">
+                                    Postal Code
+                                </label>
+                                <input id="sign-up-code" class="input" placeholder="Enter postal code" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-email" class="form-label">
+                                    Email
+                                </label>
+                                <input id="sign-up-email" class="input" placeholder="Enter email" type="text">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-membership" class="form-label">
+                                    Membership
+                                </label>
+                                <select id="sign-up-membership" class="input">
+                                    <option value="choose-membership" selected disabled hidden>
+                                        Choose a membership
+                                    </option>
+                                    <option value="only">
+                                        Only Classes
+                                    </option>
+                                    <option value="classic">
+                                        Classic
+                                    </option>
+                                    <option value="black">
+                                        Black
+                                    </option>
+                                </select>
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-pass" class="form-label">
+                                    Password
+                                </label>
+                                <input id="sign-up-pass" class="input" placeholder="Enter password" type="password">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div class="signup-form-field">
+                                <label for="sign-up-repeatpass" class="form-label">
+                                    Repeat password
+                                </label>
+                                <input id="sign-up-repeatpass" class="input" placeholder="Enter repeated password" type="password">
+                                <span class="input-error-message hidden"></span>
+                            </div>
+                            <div>
+                                <button type="submit" class="sign-up-button">
+                                    Register
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </main>
+            </div>
+        </div>
+        <div class="success-modal">
+            <div class="modal">
+                <div class="modal-top">
+                    <span class="succes-tittle-modal">Successfuly registered</span>
+                    <span class="success-close modal-cross">&times;</span>
+                </div>
+                <p class="success-content modal-content"></p>
+                <button type="button" class="success-modal-button">ok</button>
+            </div>
+        </div>
+        <div class="error-modal">
+            <div class="modal">
+                <div class="modal-top">
+                    <span class="error-tittle-modal">Register Error</span>
+                    <span class="error-close modal-cross">&times;</span>
+                </div>
+                <p class="error-content modal-content"></p>
+                <button type="button" class="error-modal-button">ok</button>
             </div>
         </div>
         <script src="../js/sign-up.js"></script>

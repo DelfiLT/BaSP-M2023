@@ -77,14 +77,14 @@
                                 Log In
                             </h1>
                             <form class="login-form">
-                                <div class="form-field">
+                                <div class="login-form-field">
                                     <label for="login-email" class="form-label">
                                         Email
                                     </label>
                                     <input id="login-email" class="input" placeholder="Username" type="text">
                                     <span class="input-error-message hidden"></span>
                                 </div>
-                                <div class="form-field">
+                                <div class="login-form-field">
                                     <label for="login-pass" class="form-label">
                                         Password
                                     </label>
@@ -107,6 +107,26 @@
                          </div>
                     </div>
                 </main>
+            </div>
+        </div>
+        <div class="success-modal">
+            <div class="modal">
+                <div class="modal-top">
+                    <span class="succes-tittle-modal">Successfuly loged in</span>
+                    <span class="success-close modal-cross">&times;</span>
+                </div>
+                <p class="success-content modal-content"></p>
+                <button type="button" class="success-modal-button">ok</button>
+            </div>
+        </div>
+        <div class="error-modal">
+            <div class="modal">
+                <div class="modal-top">
+                    <span class="error-tittle-modal">Log in Error</span>
+                    <span class="error-close modal-cross">&times;</span>
+                </div>
+                <p class="error-content modal-content"></p>
+                <button type="button" class="error-modal-button">ok</button>
             </div>
         </div>
         <script src="../js/login.js"></script>
