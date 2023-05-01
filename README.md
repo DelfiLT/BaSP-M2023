@@ -54,5 +54,13 @@ You can check every validation in the requirements document
 
 You can try the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-06/views/index.html)
 
+## Week 07
+
+In the seventh week we learned about Asynchronus JavaScript and we did the fecth requests for our form validations. We
+used the information given from de API to show success and error messages, also we loaded the sign up information in our
+local storage.
+
+You can try the page on [GitHub](https://delfilt.github.io/BaSP-M2023/Week-07/views/index.html)
+
 ## Authors
 - Tomasino Delfina

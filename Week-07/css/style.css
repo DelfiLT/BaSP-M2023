@@ -203,10 +203,10 @@ tr {
     align-items: stretch;
     justify-content: space-between;
     width: 80%;
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 4px;
     height: 25%;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 4px;
 }
 
 .modal-top {
@@ -234,10 +234,10 @@ tr {
 }
 
 .success-modal-button {
+    align-self: flex-end;
     width: 22%;
     height: 22%;
     margin-top: 10px;
-    align-self: flex-end;
     border: none;
     border-radius: 5px;
     background-color: #AACE9B;
@@ -255,10 +255,10 @@ tr {
 }
 
 .error-modal-button {
+    align-self: flex-end;
     width: 22%;
     height: 22%;
     margin-top: 10px;
-    align-self: flex-end;
     border: none;
     border-radius: 5px;
     background-color: #F13312;
