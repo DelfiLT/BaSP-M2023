@@ -428,7 +428,7 @@ const validateInputs = (inputBlured) => {
     return true;
 }
 
-Array.from(form.elements).forEach(element => {
+Array.from(form.querySelectorAll('.input')).forEach(element => {
     element.addEventListener('blur', event => {
         validateInputs(event.target);
     });
